@@ -1,0 +1,52 @@
+#doosje{
+    background-color: lightgray;
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 5%;
+    text-align: center;
+}
+#dozen{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-top:5%;
+    padding-left: 9%;
+    padding-right: 9%;
+}
+#informatie{
+    padding: 5px;
+}
+
+#header{
+    background-color: lightgray;
+    padding: 5px;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+ul{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 30%;
+}
+#foto{
+    border: 1px solid black;
+    border-radius: 5%;
+}
+#projectdoos{
+    background-color: lightgray;
+    width: 500px;
+    border: 1px solid black;
+    border-radius: 5%;
+    text-align: center;
+}
+#project-foto{
+    width: 500px;
+    height: 300px;
+}
+#projecten{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-left: 14%;
+    padding-right: 14%;
+}
