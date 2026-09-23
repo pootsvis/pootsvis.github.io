@@ -2,7 +2,23 @@
     margin:auto;
 }
 
-#doosje{
+#doosje1{
+    background-color: lightgray;
+    width: 350px;
+    border: 1px solid black;
+    border-radius: 5%;
+    text-align: center;
+    margin:auto;
+}
+#doosje2{
+    background-color: lightgray;
+    width: 350px;
+    border: 1px solid black;
+    border-radius: 5%;
+    text-align: center;
+    margin:auto;
+}
+#doosje3{
     background-color: lightgray;
     width: 350px;
     border: 1px solid black;
@@ -54,7 +70,21 @@ a:hover{
     background-color: rgb(161, 160, 160);
 }
 
-#foto{
+#foto1{
+    border: 1px solid black;
+    border-radius: 5%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 5%;
+}
+#foto2{
+    border: 1px solid black;
+    border-radius: 5%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 5%;
+}
+#foto3{
     border: 1px solid black;
     border-radius: 5%;
     width: 150px;
