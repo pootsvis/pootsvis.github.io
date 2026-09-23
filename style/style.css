@@ -91,7 +91,7 @@ a:hover{
     height: 150px;
     margin-bottom: 5%;
 }
-#projectdoos{
+#projectdoos1{
     background-color: lightgray;
     width: 450px;
     border: 1px solid black;
@@ -99,7 +99,19 @@ a:hover{
     text-align: center;
     margin: auto;
 }
-#project-foto{
+#projectdoos2{
+    background-color: lightgray;
+    width: 450px;
+    border: 1px solid black;
+    border-radius: 5%;
+    text-align: center;
+    margin: auto;
+}
+#project-foto1{
+    width: 450px;
+    height: 300px;
+}
+#project-foto2{
     width: 450px;
     height: 300px;
 }
