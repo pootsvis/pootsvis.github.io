@@ -98,6 +98,7 @@ a:hover{
     border-radius: 5%;
     text-align: center;
     margin: auto;
+    padding:10px;
 }
 #projectdoos2{
     background-color: lightgray;
@@ -106,6 +107,7 @@ a:hover{
     border-radius: 5%;
     text-align: center;
     margin: auto;
+    padding:10px;
 }
 #project-foto1{
     width:70%;
