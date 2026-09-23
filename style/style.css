@@ -1,6 +1,4 @@
-.global{
-    margin:auto;
-}
+
 
 #doosje{
     background-color: lightgray;
@@ -39,7 +37,7 @@ li{
 
 ul{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
     width: 30%;
 }
 
@@ -61,7 +59,7 @@ a:hover{
     height: 150px;
     margin-bottom: 5%;
 }
-#projectdoos{
+.projectdoos {
     background-color: lightgray;
     width: 450px;
     border: 1px solid black;
@@ -69,13 +67,15 @@ a:hover{
     text-align: center;
     margin: auto;
 }
-#project-foto{
+
+.projectdoos img {
     width: 450px;
     height: 300px;
 }
-#projecten{
+
+#projecten {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     gap: 5%;
     padding-left: 10%;
     padding-right: 10%;
@@ -95,4 +95,14 @@ a:hover{
     border-radius: 5%;
     text-align: center;
     padding:5%;
+}
+
+#contactform{
+    background-color: lightgray;
+    width: 25%;
+    padding: 3%;
+    margin:auto;
+    margin-top: 5%;
+    border: 1px solid black;
+    border-radius: 5%;
 }
