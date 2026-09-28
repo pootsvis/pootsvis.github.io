@@ -14,7 +14,7 @@
     padding-top: 5%;
     padding-left: 9%;
     padding-right: 9%;
-
+    margin-bottom: 4%;
 }
 #informatie{
     padding: 5px;
@@ -79,12 +79,14 @@ a:hover{
     gap: 5%;
     padding-left: 10%;
     padding-right: 10%;
+    margin-bottom: 4%;
 }
 #blog{
     display: grid;
     grid-template-columns: auto auto auto;
     padding-left: 14%;
     padding-right: 14%;
+    margin-bottom: 4%;
 
 }
 #blogdoos{
@@ -107,13 +109,13 @@ a:hover{
     border-radius: 5%;
 }
 
+#weer-widget{
+    margin-bottom: 27%;
+}
+
 footer{
     background-color: lightgray;
     text-align: center;
-    position:static;
-    left: 0;
-    bottom: 0;
-    width: 98%;
-    padding: 1%;
-    margin-top: 2%;
+    width: 99%;
+    padding: 0.5%;
 }
