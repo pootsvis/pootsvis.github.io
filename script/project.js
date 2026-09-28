@@ -4,13 +4,15 @@ const projecten = [
         id: "project1",
         titel: "Chassis",
         foto: "../images/project1.png",
-        beschrijving: "Bij dit project moesten wij onze eigen ai-agent maken. Wij hadden er voor gekozen om een ai te maken die computer onderdelen voor je uit kiest op basis van je budget en eisen die je geeft."
+        alt: "Screenshot van de Chassis-website waarop een AI-agent computeronderdelen voorstelt op basis van budget",
+        beschrijving: "Bij dit project moesten wij onze eigen ai-agent maken. De ai-agent moest een website maken die computeronderdelen voorstelt op basis van budget."
     },
     {
         id: "project2",
         titel: "Leafbid",
         foto: "../images/project2.png",
-        beschrijving: "Bij dit project moesten we een planten auction website maken. De foto die hier staat is niet het eindproduct, want helaas kan ik daar niet meer bij."
+        alt: "Voorbeeldafbeelding van de Leafbid-website, een veilingsite voor planten",
+        beschrijving: "Bij dit project moesten we een planten auction website maken. Helaas heb ik voor dit project het eind product niet meer."
     }
 ];
 
@@ -27,7 +29,7 @@ const maakProjectElement = (project) => {
 
     const foto = document.createElement("img");
     foto.src = project.foto;
-    foto.alt = project.titel;
+    foto.alt = project.alt;
 
     const beschrijving = document.createElement("p");
     beschrijving.textContent = project.beschrijving;

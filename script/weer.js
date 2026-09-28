@@ -64,3 +64,4 @@ const startMetLocatie = () => {
 };
 
 startMetLocatie();
+
