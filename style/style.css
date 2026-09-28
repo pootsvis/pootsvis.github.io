@@ -106,3 +106,14 @@ a:hover{
     border: 1px solid black;
     border-radius: 5%;
 }
+
+footer{
+    background-color: lightgray;
+    text-align: center;
+    position:static;
+    left: 0;
+    bottom: 0;
+    width: 98%;
+    padding: 1%;
+    margin-top: 2%;
+}
