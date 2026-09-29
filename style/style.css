@@ -69,7 +69,7 @@ a:hover{
 }
 
 .projectdoos img {
-    width: 450px;
+    width: 40%;
     height: 300px;
 }
 
@@ -99,14 +99,20 @@ a:hover{
     padding:5%;
 }
 
+
 #contactform{
     background-color: lightgray;
-    width: 25%;
+    width: 40%;
     padding: 3%;
     margin:auto;
     margin-top: 5%;
+    margin-bottom: 7%;
     border: 1px solid black;
     border-radius: 5%;
+}
+
+input[type=text], input[type=email], textarea {
+    width: 100%;
 }
 
 #weer-widget{
