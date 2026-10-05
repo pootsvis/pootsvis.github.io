@@ -17,6 +17,7 @@ const projecten = [
 ];
 
 const projectenContainer = document.getElementById("projecten");
+const sorteerSelect = document.getElementById("sorteer");
 
 // 2. Eén project renderen als DOM-element
 const maakProjectElement = (project) => {
@@ -38,31 +39,63 @@ const maakProjectElement = (project) => {
     return doos;
 };
 
-// 3. Lijst renderen (met optioneel filter)
+// 3. Lijst renderen
 const renderProjecten = (lijst) => {
-    projectenContainer.innerHTML = ""; // leegmaken voor herrender
+    projectenContainer.innerHTML = "";
     lijst.forEach((project) => {
         projectenContainer.appendChild(maakProjectElement(project));
     });
 };
 
-// 4. Filteren
-const filterSelection = (filter) => {
-    const gefilterd = filter === "all"
-        ? projecten
-        : projecten.filter((project) => project.id === filter);
-    renderProjecten(gefilterd);
+// 4. Sorteren: geeft een NIEUWE, gesorteerde array terug (muteert 'lijst' niet)
+const sorteerProjecten = (lijst, sorteerOptie) => {
+    const gesorteerd = [...lijst]; // kopie, zodat we de originele array niet aanpassen
+
+    switch (sorteerOptie) {
+        case "titel-az":
+            gesorteerd.sort((a, b) => a.titel.localeCompare(b.titel));
+            break;
+        case "titel-za":
+            gesorteerd.sort((a, b) => b.titel.localeCompare(a.titel));
+            break;
+        default:
+            // "default": geen sortering, originele volgorde
+            break;
+    }
+
+    return gesorteerd;
 };
 
-// 5. Knoppen koppelen met event listeners
+// 5. Bijgehouden state: huidig filter en huidige sortering
+let huidigFilter = "all";
+let huidigeSortering = "default";
+
+// 6. Combineert filter + sortering en rendert het resultaat
+const update = () => {
+    const gefilterd = huidigFilter === "all"
+        ? projecten
+        : projecten.filter((project) => project.id === huidigFilter);
+
+    const gesorteerd = sorteerProjecten(gefilterd, huidigeSortering);
+    renderProjecten(gesorteerd);
+};
+
+// 7. Filterknoppen
 const knoppen = document.querySelectorAll(".btn");
 knoppen.forEach((knop) => {
     knop.addEventListener("click", () => {
         knoppen.forEach((k) => k.classList.remove("active"));
         knop.classList.add("active");
-        filterSelection(knop.dataset.filter);
+        huidigFilter = knop.dataset.filter;
+        update();
     });
 });
 
-// 6. Eerste render bij het laden van de pagina
-renderProjecten(projecten);
+// 8. Sorteer-dropdown
+sorteerSelect.addEventListener("change", () => {
+    huidigeSortering = sorteerSelect.value;
+    update();
+});
+
+// 9. Eerste render bij het laden van de pagina
+update();
