@@ -115,18 +115,31 @@ a:hover{
     padding-left: 14%;
     padding-right: 14%;
     margin-bottom: 4%;
-
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
 }
-#blogdoos{
+#blogdoos1{
     margin:auto;
     background-color: lightgray;
-    width: 70%;
+    width: 400px;
     border: 1px solid black;
     border-radius: 5%;
     text-align: center;
     padding:5%;
+    margin-bottom: 5%;
 }
 
+#blogdoos2{
+    margin:auto;
+    background-color: lightgray;
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 5%;
+    text-align: center;
+    padding:5%;
+    margin-bottom: 5%;
+}
 
 #contactform{
     background-color: lightgray;
